@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+  <androidx.camera.view.PreviewView
+      android:id="@+id/preview_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:implementationMode="compatible" />
+
+  <io.github.g00fy2.quickie.QROverlayView
+      android:id="@+id/overlay_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="visible"
+      tools:visibility="visible" />
+
+  <!-- Top-left Settings Button with Glassmorphism Design -->
+  <ImageButton
+      android:id="@+id/btn_settings"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_gravity="top|start"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:background="@drawable/glass_button_bg"
+      android:contentDescription="Settings"
+      android:padding="12dp"
+      android:src="@drawable/ic_settings"
+      app:tint="@color/quickie_white" />
+
+  <!-- Bottom Scan from Image / Gallery Button with Glassmorphism Design -->
+  <LinearLayout
+      android:id="@+id/btn_gallery"
+      android:layout_width="wrap_content"
+      android:layout_height="52dp"
+      android:layout_gravity="bottom|center_horizontal"
+      android:layout_marginBottom="44dp"
+      android:background="@drawable/glass_pill_button_bg"
+      android:clickable="true"
+      android:focusable="true"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:paddingStart="22dp"
+      android:paddingEnd="24dp">
+
+    <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_photo_library"
+        app:tint="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Scan from Image"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+  </LinearLayout>
+
+  <!-- Permission Denied Fallback Container -->
+  <LinearLayout
+      android:id="@+id/permission_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical"
+      android:padding="32dp"
+      android:background="?android:attr/colorBackground"
+      android:visibility="gone"
+      tools:visibility="gone">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_qs_qrcode"
+        android:contentDescription="QR code icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/scan_qr_code"
+        android:textAppearance="?attr/textAppearanceHeadlineSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/missing_permission_message"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="?android:attr/textColorSecondary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/grant_permission_button"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Grant Permission" />
+
+  </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,8 @@
+{
+  "name": "Quickie",
+  "description": "A native qr scanner android app",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

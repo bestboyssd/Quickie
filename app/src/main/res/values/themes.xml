@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Base Application Theme -->
+  <style name="Theme.Quickie" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="android:statusBarColor">@android:color/transparent</item>
+    <item name="android:navigationBarColor">@android:color/transparent</item>
+  </style>
+
+  <!-- Startup Splash Screen Theme (Compatible with Android 6.0 through 14+) -->
+  <style name="Theme.Quickie.Starting" parent="Theme.SplashScreen">
+    <item name="windowSplashScreenBackground">#000000</item>
+    <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+    <item name="postSplashScreenTheme">@style/Theme.Quickie</item>
+  </style>
+</resources>

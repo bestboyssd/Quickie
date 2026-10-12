@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+  <!-- Scanner Corner Brackets (Pure White) -->
+  <path
+      android:fillColor="#00000000"
+      android:strokeColor="#FFFFFFFF"
+      android:strokeWidth="3.5"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round"
+      android:pathData="M 28,42 L 28,31 A 3,3 0 0,1 31,28 L 42,28" />
+
+  <path
+      android:fillColor="#00000000"
+      android:strokeColor="#FFFFFFFF"
+      android:strokeWidth="3.5"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round"
+      android:pathData="M 66,28 L 77,28 A 3,3 0 0,1 80,31 L 80,42" />
+
+  <path
+      android:fillColor="#00000000"
+      android:strokeColor="#FFFFFFFF"
+      android:strokeWidth="3.5"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round"
+      android:pathData="M 28,66 L 28,77 A 3,3 0 0,0 31,80 L 42,80" />
+
+  <path
+      android:fillColor="#00000000"
+      android:strokeColor="#FFFFFFFF"
+      android:strokeWidth="3.5"
+      android:strokeLineCap="round"
+      android:strokeLineJoin="round"
+      android:pathData="M 66,80 L 77,80 A 3,3 0 0,0 80,77 L 80,66" />
+
+  <!-- Top-Left Finder Square -->
+  <path
+      android:fillColor="#00000000"
+      android:strokeColor="#FFFFFFFF"
+      android:strokeWidth="2.5"
+      android:pathData="M 38,36 H 47 A 2,2 0 0,1 49,38 V 47 A 2,2 0 0,1 47,49 H 38 A 2,2 0 0,1 36,47 V 38 A 2,2 0 0,1 38,36 Z" />
+  <path
+      android:fillColor="#FFFFFFFF"
+      android:pathData="M 40.5,40.5 H 44.5 V 44.5 H 40.5 Z" />
+
+  <!-- Top-Right Finder Square -->
+  <path
+      android:fillColor="#00000000"
+      android:strokeColor="#FFFFFFFF"
+      android:strokeWidth="2.5"
+      android:pathData="M 61,36 H 70 A 2,2 0 0,1 72,38 V 47 A 2,2 0 0,1 70,49 H 61 A 2,2 0 0,1 59,47 V 38 A 2,2 0 0,1 61,36 Z" />
+  <path
+      android:fillColor="#FFFFFFFF"
+      android:pathData="M 63.5,40.5 H 67.5 V 44.5 H 63.5 Z" />
+
+  <!-- Bottom-Left Finder Square -->
+  <path
+      android:fillColor="#00000000"
+      android:strokeColor="#FFFFFFFF"
+      android:strokeWidth="2.5"
+      android:pathData="M 38,59 H 47 A 2,2 0 0,1 49,61 V 70 A 2,2 0 0,1 47,72 H 38 A 2,2 0 0,1 36,70 V 61 A 2,2 0 0,1 38,59 Z" />
+  <path
+      android:fillColor="#FFFFFFFF"
+      android:pathData="M 40.5,63.5 H 44.5 V 67.5 H 40.5 Z" />
+
+  <!-- Center QR Matrix Bits -->
+  <path
+      android:fillColor="#FFFFFFFF"
+      android:pathData="M 53,37 H 56 V 48 H 53 Z" />
+  <path
+      android:fillColor="#FFFFFFFF"
+      android:pathData="M 53,53 H 72 V 56.5 H 53 Z" />
+  <path
+      android:fillColor="#FFFFFFFF"
+      android:pathData="M 59,61 H 63 V 71 H 59 Z" />
+  <path
+      android:fillColor="#FFFFFFFF"
+      android:pathData="M 67,61 H 71 V 71 H 67 Z" />
+  <path
+      android:fillColor="#FFFFFFFF"
+      android:pathData="M 53,64 H 56 V 69 H 53 Z" />
+
+</vector>

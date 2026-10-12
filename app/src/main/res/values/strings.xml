@@ -1,0 +1,21 @@
+<resources>
+  <string name="app_name" translatable="false">Quickie</string>
+
+  <string name="scan_qr_code" translatable="false">Scan QR Code</string>
+  <string name="scan_again" translatable="false">Scan Again</string>
+  <string name="qr_code_scanned" translatable="false">QR Code Detected</string>
+  <string name="open_action" translatable="false">Open Link</string>
+  <string name="copy_action" translatable="false">Copy Content</string>
+  <string name="share_action" translatable="false">Share</string>
+  <string name="copied_to_clipboard" translatable="false">Copied to clipboard</string>
+  <string name="ready_to_scan_desc" translatable="false">Point your camera at a QR code to quickly scan and view its contents.</string>
+  <string name="user_canceled_message" translatable="false">Scan was canceled. Tap below to scan a QR code.</string>
+  <string name="missing_permission_message" translatable="false">Camera permission is required to scan QR codes.</string>
+  <string name="scan_barcode" translatable="false">Scan QR code</string>
+  <string name="ok_action" translatable="false">OK</string>
+  
+  <string name="flash_toggle_desc" translatable="false">Toggle camera flashlight</string>
+  <string name="flash_turned_on" translatable="false">Flashlight turned ON</string>
+  <string name="flash_turned_off" translatable="false">Flashlight turned OFF</string>
+  <string name="flash_simulated_on" translatable="false">Flashlight ON (Active on devices with LED flash)</string>
+</resources>

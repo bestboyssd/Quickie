@@ -1,0 +1,56 @@
+[versions]
+quickie = "1.12.0"
+
+androidconfig-minSdk = "23"
+androidconfig-compileSdk = "36"
+androidconfig-targetSdk = "36"
+androidconfig-buildTools = "36.0.0"
+
+androidGradle = "9.1.1"
+kotlin = "2.2.10"
+ksp = "2.2.10-2.0.2"
+
+appcompat = "1.7.1"
+core = "1.18.0"
+
+cameraX = "1.6.1"
+
+barcodeScanning = "17.3.0"
+barcodeScanningGms = "18.3.1"
+
+materialDesign = "1.14.0"
+room = "2.6.1"
+coreSplashScreen = "1.0.1"
+
+junit = "6.1.0"
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-camera = { module = "androidx.camera:camera-camera2", version.ref = "cameraX" }
+androidx-cameraLifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraX" }
+androidx-cameraPreview = { module = "androidx.camera:camera-view", version.ref = "cameraX" }
+androidx-core = { module = "androidx.core:core-ktx", version.ref = "core" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashScreen" }
+
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+
+mlkit-barcodeScanning = { module = "com.google.mlkit:barcode-scanning", version.ref = "barcodeScanning" }
+mlkit-barcodeScanningGms = { module = "com.google.android.gms:play-services-mlkit-barcode-scanning", version.ref = "barcodeScanningGms" }
+
+google-materialDesign = { module = "com.google.android.material:material", version.ref = "materialDesign" }
+
+test-junit = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+test-junit-platformLauncher = { module = "org.junit.platform:junit-platform-launcher" }
+
+kotlin-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradle" }
+android-library = { id = "com.android.library", version.ref = "androidGradle" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+
+
